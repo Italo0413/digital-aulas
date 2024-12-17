@@ -96,4 +96,15 @@ body{
     padding: 10px 45px;
 }
 
+.container .direita .formulario .topo .redes-sociais{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
 
+.container .direita .formulario .topo .redes-sociais .icone button{
+    border: 1px solid #aaaaaa;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
