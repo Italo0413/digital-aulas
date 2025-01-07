@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;  
+}
+
+.container .esquerda{
+    width: 50%;
+    height: 100%;
+    background-color: #8b149e;
+}
+
+.container .direita{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .direita .topo h1{
+    font-size: 40px;
+    color: #8b149e;
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+.container .direita .meio{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+}
+
+.container .direita .meio .campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .direita .meio .campo label{
+    font-weight: bold;
+}
+
+.container .direita .meio .campo input{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e3e3e3;
+}
+
+.container .direita .meio .esqueci-senha{
+    display: flex;
+    justify-content: space-between
+}
+
+.container .direita .fim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+}
+
+.container .direita .fim button{
+    border: none;
+    background-color: #8b149e;
+    width: 100%;
+    height: 35px;
+    color: white;
+    margin-top: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.container .direita .fim .nova-conta{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 10px;
+}
