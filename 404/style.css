@@ -33,13 +33,20 @@ a {
 }
 
 .container header img {
-    width: 60px;
+    width: 70px;
     padding-left: 10px;
 }
 
 .container header .navegacao {
     display: flex;
+    align-items: center;
     gap: 50px;
+    margin-right: 80px;
+    font-weight: bolder;
+}
+
+.container header .navegacao nav {
+    padding-right: 40px;
 }
 
 .container header .navegacao nav ul {
@@ -47,4 +54,131 @@ a {
     gap: 25px;
 }
 
+.container header .navegacao button {
+    border:  none;
+    background-color: transparent;
+    cursor: pointer;
+}
 
+.container header .navegacao button i {
+    font-size: 16px;
+}
+
+.container main {
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container main .esquerda {
+    display: flex;
+    justify-content:flex-end;
+    width: 55%;
+}
+
+.container main .esquerda img {
+    width: 550px;
+    margin-right: 10px;
+}
+
+.container main .direita {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container main .direita .secao1 .info {
+    background-color: #724a99; 
+    width: fit-content;
+    line-height: 0;
+    padding: 1px 10px;
+    border-radius: 100px;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}
+
+.container main .direita .secao2 .botoes {
+    display: flex;
+    gap: 20px;
+}
+
+.container main .direita .secao2 .botoes .botao {
+    border: 1px solid transparent;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.container main .direita .secao2 .botoes .primario {
+    background-color: #724a99;
+    color: white;
+    transition: 500ms;
+}
+
+.container main .direita .secao2 .botoes .primario:hover{
+    background-color: #3b1363;
+
+}
+.container main .direita .secao2 .botoes .secundario {
+    color: #52168e;
+    transition: 500ms;
+}
+
+.container main .direita .secao2 .botoes .secundario:hover {
+    border: 1px solid #52168e;
+}
+
+.container footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 8%;
+}
+
+
+.container footer .r-esquerda {
+    width: 50%;
+}
+
+.container footer .r-meio {
+    width: 22%;
+    font-weight: bold;
+}
+
+.container footer .r-direita {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 22%;
+    gap: 10px;
+}
+
+.container footer .r-direita .icone button {
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container footer .r-direita .icone button i{
+    font-size: 30px;
+    background-color: white;
+    transition: ease 500ms;
+}
+
+.container footer .r-direita .icone .fa-facebook:hover {
+    color: blue;
+}
+
+.container footer .r-direita .icone .fa-instagram:hover {
+    color: red;
+}
+
+.container footer .r-direita .icone .fa-whatsapp:hover {
+    color: green;
+}
