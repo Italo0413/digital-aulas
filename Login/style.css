@@ -44,7 +44,7 @@ body{
 .container .direita .meio{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 100%;
     gap: 10px;
 }
 
@@ -99,4 +99,33 @@ body{
     align-items: center;
     justify-content: baseline;
     gap: 10px;
+}
+
+/* Media Query */
+
+@media (max-width: 750px){
+
+    .container {
+        background-color: white;
+    }
+
+    .container .esquerda{
+        display: none;
+    }
+
+    .container .direita{
+        width: 100%;
+    }
+}
+
+@media (max-width: 407px) {
+
+    .container .direita .meio{
+       width: 90%;
+    }
+
+    .container .direita .fim{
+        width: 90%;
+    }
+
 }
