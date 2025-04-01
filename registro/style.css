@@ -1,52 +1,63 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-}   
+}
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     display: flex;
+    background-color: #8b149e;
 }
 
-.container .esquerda{
+.container .esquerda {
     width: 40%;
     height: 100%;
     color: aliceblue;
-    background-color: #8b149e;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.container .esquerda h1{
+.container .esquerda h1 {
     color: white;
     font-size: 40px;
 }
 
-.container .esquerda p{
+.container .esquerda p {
     text-align: center;
 }
 
-.container .esquerda button{
+.container .esquerda button {
     background-color: transparent;
     color: aliceblue;
     border: 1px solid white;
     padding: 10px 45px;
     border-radius: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 500ms;
 }
 
-.container .direita{
+.container .esquerda button:hover {
+    background-color: white;
+    color: #8b149e;
+}
+
+.container .direita {
     width: 60%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}   
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
 
-.container .direita .formulario{
+.container .direita .formulario {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -54,35 +65,65 @@ body{
     align-items: center;
 }
 
-.container .direita .formulario .topo{
+.container .direita .formulario .topo {
     text-align: center;
 }
 
-.container .direita .formulario .topo h1{
+.container .direita .formulario .topo h1 {
     color: #8b149e;
     font-size: 40px;
 }
 
-.container .direita .formulario .topo p{
+.container .direita .formulario .topo p {
     color: #929292;
     text-align: center;
 }
 
-.container .direita .formulario .meio{
+.container .direita .formulario .topo .redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.container .direita .formulario .topo .redes-sociais .icone button {
+    border: 1px solid #e3e3e3;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.container .direita .formulario .topo .redes-sociais .facebook button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.container .direita .formulario .topo .redes-sociais .google button:hover {
+    color: blue;
+}
+
+
+.container .direita .formulario .topo .redes-sociais .linkedin button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.container .direita .formulario .meio {
     width: 35%;
     display: flex;
     flex-direction: column;
-    gap: 20px;   
+    gap: 20px;
 }
 
-.container .direita .formulario .meio .campo{
+.container .direita .formulario .meio .campo {
     background-color: #e3e3e3;
     display: flex;
     align-items: center;
     padding: 0 0 0 10px;
 }
 
-.container .direita .formulario .meio .campo input{
+.container .direita .formulario .meio .campo input {
     border: none;
     background-color: transparent;
     width: 100%;
@@ -90,39 +131,31 @@ body{
     outline: none;
 }
 
-.container .direita .formulario .fim{
+.container .direita .formulario .fim {
     text-align: center;
     margin-top: 20px;
 }
 
-.container .direita .formulario .fim button{
+.container .direita .formulario .fim button {
     color: white;
     background-color: #8b149e;
-    border: transparent;
     border: 2px solid white;
     border-radius: 25px;
     padding: 10px 45px;
+    cursor: pointer;
+    transition: 500ms;
 }
 
-.container .direita .formulario .topo .redes-sociais{
-    display: flex;
-    justify-content: center;
-    gap: 25px;
+.container .direita .formulario .fim button:hover {
+    background-color: #741083;
+    border: 1px solid black;
 }
-
-.container .direita .formulario .topo .redes-sociais .icone button{
-    border: 1px solid #e3e3e3;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-}
-
 
 /* Media Query */
 
 @media (max-width: 800px) {
 
-    .container{
+    .container {
         flex-direction: column;
     }
 
@@ -131,17 +164,15 @@ body{
         height: 50%;
     }
 
-    .container .direita{
+    .container .direita {
         width: 100%;
         height: 50%;
     }
 
-    .container .direita .formulario .topo h1{
-        
-    }
+    .container .direita .formulario .topo h1 {}
 
 
-    .container .direita .formulario .meio{
+    .container .direita .formulario .meio {
         width: 60%;
     }
 }

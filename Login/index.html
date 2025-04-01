@@ -3,9 +3,12 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Login-Digital</title>
+    
 </head>
 
 <body>
@@ -22,10 +25,12 @@
                     <div class="campo">
                         <label for="email">E-mail</label>
                         <input type="email" name="" id="email">
+                        <p id="error-email" class="hidden text-red-700">Campo obrigatório.</p>
                     </div>
                     <div class="campo">
                         <label for="senha">Senha</label>
                         <input type="password" name="" id="senha">
+                        <p id="error-senha" class="hidden text-red-700">Campo obrigatório.</p>
                     </div>
                     <div class="esqueci-senha"> 
                         <div class="e-esquerda">
@@ -38,7 +43,7 @@
                 </div>
                 </div>
                 <div class="fim">
-                    <button>Entrar</button>
+                    <button onclick="Logar()">Entrar</button>
                     <div class="nova-conta"> 
                         <p>Não Possui Uma Conta?</p>
                         <a href="">Cadastre-se</a>
@@ -47,6 +52,9 @@
             </div>
         </div>
     </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

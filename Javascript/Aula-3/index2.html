@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+        <main class="bg-gray-950 w-full h-screen flex">
+            <div class="w-1/2 h-full flex justify-center items-center">
+                <img class="w-[600px]" src="imagens/fitness-tracker-animate.svg" alt="Imagem Homem Correndo">
+            </div>
+            <!-- main-direita -->
+            <div class="w-1/2 h-full flex justify-center items-center"> 
+                <!-- caixa -->
+                <form onsubmit="calcularIMC(event)" class="bg-gray-900 w-2/3 h-2/3 rounded-xl px-4 py-3 text-white">
+                    <!-- topo -->
+                   <div class="">
+                    <h1 class="text-3xl"> Calculadora - IMC </h1>
+                    <span class="flex border-b-2 border-purple-900 w-[150px] h-3"></span>
+                   </div> 
+                   <!-- meio -->
+                   <div class="my-2 space-y-4">
+                    <div class="flex flex-col text-white space-y-1">
+                        <label for="peso">Peso</label>
+                        <input class="bg-gray-700 rounded-md py-2"  type="number" name="" id="peso">
+                        <p id="error-peso" class="text-red-600 hidden">Preencha o campo Peso.</p>
+
+                        <label for="altura">Altura</label>
+                        <input class="bg-gray-700 rounded-md py-2"  type="text" name="" id="altura">
+                        <p id="error-altura" class="text-red-600 hidden">Preencha o campo Altura.</p>
+                    </div>
+
+                    <button class="bg-purple-900 w-full rounded-lg py-2 cursor-pointer  hover:bg-purple-950">Calcular</button>
+                    <span class="w-full border-b-2 border-gray-950 flex h-2"></span>
+                   </div>
+                   <!-- fim -->
+                   <div class="flex items-center">
+                    <!-- esquerda -->
+                    <div class="flex flex-col text-center px-5 py-4">
+                        <h1 class="text-purple-900 text-4xl" id="total-imc">00.00</h1>
+                        <p class="text-sm">Seu IMC</p>
+                    </div>
+                    <!-- direita -->
+                    <div class="px-8">
+                        <p id="grau">Insira os valores para calcular.</p>
+                    </div>
+                   </div>
+                </form>
+            </div>
+        </main>
+        <script src="script2.js"></script>
+</body>
+
+</html>
